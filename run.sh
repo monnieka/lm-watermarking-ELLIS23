@@ -9,7 +9,7 @@
 #SBATCH -e job.err # for stderr redirection
 #SBATCH -p boost_usr_prod # partition for resource allocation
 #SBATCH -A tra23_ELLIS # account name 
-#SBATCH --reservation s_tra_Ellis1809
+#SBATCH --reservation s_tra_Ellis1809 # after monday change to s_tra_Ellis1809
 
 module load deeplrn
 module av cineca-ai
