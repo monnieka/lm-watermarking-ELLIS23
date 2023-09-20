@@ -16,18 +16,18 @@ import torch
 from torch import Tensor
 from tokenizers import Tokenizer
 
-import wandb
+#import wandb TODO: change for fixing bug
 import matplotlib.pyplot as plt
 
 # cache path before HF imports just for kicks
 # bc I don't really know when this is pulled by the library
 # TODO change to passing as an arg to the model load fn
-USER = "jkirchen"
+#USER = "jkirchen"
 # Huggingface cache
-HF_HOME=f"/cmlscratch/{USER}/.cache/huggingface"
+#HF_HOME=f"/cmlscratch/{USER}/.cache/huggingface"
 # HF_HOME=f"/scratch0/{USER}/.cache/huggingface"
 # HF_HOME=f"/scratch1/{USER}/.cache/huggingface"
-os.environ["HF_HOME"] = HF_HOME
+#os.environ["HF_HOME"] = HF_HOME
 
 print(os.environ["HF_HOME"])
 
